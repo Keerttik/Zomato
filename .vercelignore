@@ -1,0 +1,13 @@
+# Ignore backend files so Vercel only deploys the static frontend
+*.py
+requirements.txt
+Procfile
+data/
+src/ai/
+src/db/
+src/services/
+src/config.py
+src/main.py
+src/download_dataset.py
+src/ingest.py
+src/test_*.py
