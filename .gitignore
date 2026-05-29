@@ -39,9 +39,13 @@ MANIFEST
 # Visual Studio Code
 .vscode/
 
-# Ignore large datasets
-data/zomato.csv
-
+# Ignore large datasets and databases
+data/*.csv
+data/*.json
+data/*.db
+data/*.db-shm
+data/*.db-wal
+src/db/*.db
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
