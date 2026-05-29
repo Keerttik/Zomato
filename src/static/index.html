@@ -131,7 +131,13 @@
         </main>
     </div>
 
-    <!-- JavaScript Handlers -->
-    <script type="module" src="js/app.js"></script>
+    <!-- Environment Variables for Vercel Deployment -->
+    <!-- REPLACE 'https://your-railway-app.up.railway.app' with your actual Railway URL after backend deployment -->
+    <script>
+        window.ENV = { API_URL: "" }; // Leave as "" for local development, or set to Railway URL for production
+    </script>
+
+    <!-- App JS (Entry Point) -->
+    <script type="module" src="/js/app.js"></script>
 </body>
 </html>
